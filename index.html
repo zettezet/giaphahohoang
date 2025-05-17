@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Dòng Họ Hoàng(Nguyễn Hoàng)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        /* Thêm hình nền phủ mờ */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('assets/images/bg-family.jpg') center/cover no-repeat;
+            opacity: 0.18;
+            z-index: 0;
+            pointer-events: none;
+        }
+        header {
+            background: #4b6cb7;
+            color: #fff;
+            padding: 30px 0 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 30px;
+        }
+        h2 {
+            color: #4b6cb7;
+        }
+        #about h2 {
+            font-size: 2.2rem;
+            background: linear-gradient(90deg, #4b6cb7, #182848, #ffb347, #ffcc33);
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-move 3s linear infinite;
+            text-shadow: 2px 2px 8px #8888;
+            margin-bottom: 16px;
+        }
+
+        @keyframes gradient-move {
+            0% {background-position: 0% 50%;}
+            100% {background-position: 100% 50%;}
+        }
+
+        #about p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #222;
+            background: rgba(255,255,255,0.7);
+            border-left: 5px solid #4b6cb7;
+            padding: 18px 22px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px #b6b6e633;
+            font-style: italic;
+            transition: box-shadow 0.3s;
+        }
+
+        #about p:hover {
+            box-shadow: 0 4px 24px #4b6cb799;
+            background: #f8faff;
+        }
+
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .member {
+            background: #f7f7fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ccc;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+        }
+        .member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            background: #4b6cb7;
+            color: #fff;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            margin-bottom: 10px;
+        }
+        .contact-form button {
+            background: #4b6cb7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #35518a;
+        }
+        /* Đảm bảo nội dung nằm trên hình nền */
+        header, main, footer {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/images/giapha.jpg" alt="Logo Dòng Họ Hoàng" style="width: 100px; height: auto;">
+        <h1>Dòng Họ Hoàng(Nguyễn Hoàng)</h1>
+        <nav>
+            <a href="#about">Giới thiệu</a>
+            <a href="#members">Thành viên tiêu biểu</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+    <main>
+        <section id="members">
+            <h2>Thành viên tiêu biểu</h2>
+                        <div class="members">
+                <div class="member">
+                    <img src="assets/images/member1.jpg" alt="Nguyễn Văn A">
+                    <h3>Nguyễn Văn A</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section id="history">
+            <h2 style="
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+        background: linear-gradient(90deg, #ffb347, #4b6cb7, #182848, #ffcc33);
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-move 3s linear infinite;
+        text-shadow: 2px 2px 8px #8888;
+        margin-bottom: 18px;
+    ">
+        Gia phả dòng họ
+    </h2>
+    <form class="history-form" style="background:rgba(255,255,255,0.95);border-radius:12px;box-shadow:0 4px 16px #b6b6e633;padding:20px 24px 16px 24px;margin-bottom:18px;">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <div>
+                <label for="day">Ngày lập:</label><br>
+                <input type="number" id="day" name="day" min="1" max="31" placeholder="Ngày" style="width:70px;">
+                <input type="number" id="month" name="month" min="1" max="12" placeholder="Tháng" style="width:70px;">
+                <input type="number" id="year" name="year" min="1000" max="9999" placeholder="Năm" style="width:90px;">
+            </div>
+            <div>
+                <label for="author">Người lập:</label><br>
+                <input type="text" id="author" name="author" placeholder="Người lập" required>
+            </div>
+            <div>
+                <label for="generation">Đời thứ:</label><br>
+                <input type="text" id="generation" name="generation" placeholder="Đời thứ" required>
+            </div>
+            <div>
+                <label for="place">Tại:</label><br>
+                <input type="text" id="place" name="place" placeholder="Địa điểm lập" required>
+            </div>
+        </div>
+        <label for="history-content" style="margin-top:10px;display:block;">Nội dung gia phả:</label>
+        <textarea id="history-content" name="history-content" rows="4" required style="width:100%;border-radius:6px;border:1px solid #bbb;padding:8px;"></textarea>
+        <button type="submit" style="margin-top:10px;background:linear-gradient(90deg,#4b6cb7,#ffb347);color:#fff;font-weight:bold;border:none;padding:10px 24px;border-radius:6px;box-shadow:0 2px 8px #4b6cb755;cursor:pointer;transition:background 0.3s,transform 0.2s;">💾 Lưu gia phả</button>
+    </form>
+    <div id="history-display" style="display:none;background:linear-gradient(120deg,#f8fafc 60%,#e0c3fc 100%);border-left:7px solid #4b6cb7;padding:24px 28px 18px 28px;border-radius:14px;box-shadow:0 4px 18px #b6b6e633;position:relative;margin-bottom:18px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+            <h3 style="color:#4b6cb7;margin:0;font-size:1.35rem;letter-spacing:1px;text-shadow:1px 2px 8px #b6b6e6;">🌳 Gia phả đã lưu</h3>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:30px 60px;">
+            <div>
+                <p style="margin:4px 0 2px 0;font-weight:bold;color:#35518a;letter-spacing:0.5px;">📅 Ngày lập</p>
+                <div style="font-size:1.15rem;color:#222;font-weight:bold;text-shadow:0 1px 4px #fff8;"> 
+                    <span id="display-date"></span>
+                </div>
+            </div>
+            <div>
+                <p style="margin:4px 0 2px 0;font-weight:bold;color:#35518a;letter-spacing:0.5px;">👤 Người lập</p>
+                <div style="font-size:1.15rem;color:#222;font-weight:bold;text-shadow:0 1px 4px #fff8;">
+                    <span id="display-author"></span>
+                </div>
+            </div>
+            <div>
+                <p style="margin:4px 0 2px 0;font-weight:bold;color:#35518a;letter-spacing:0.5px;">🏷️ Đời thứ</p>
+                <div style="font-size:1.15rem;color:#222;font-weight:bold;text-shadow:0 1px 4px #fff8;">
+                    <span id="display-generation"></span>
+                </div>
+            </div>
+            <div>
+                <p style="margin:4px 0 2px 0;font-weight:bold;color:#35518a;letter-spacing:0.5px;">📍 Tại</p>
+                <div style="font-size:1.15rem;color:#222;font-weight:bold;text-shadow:0 1px 4px #fff8;">
+                    <span id="display-place"></span>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:18px;">
+            <p style="margin:0 0 6px 0;font-weight:bold;color:#35518a;letter-spacing:0.5px;">📝 Nội dung gia phả</p>
+            <div style="background:rgba(255,255,255,0.95);border-radius:10px;padding:16px 20px;font-size:1.13rem;line-height:1.8;color:#222;box-shadow:0 2px 8px #b6b6e633;font-style:italic;transition:box-shadow 0.3s;">
+                <span id="display-content" style="white-space:pre-line"></span>
+            </div>
+        </div>
+        <button id="delete-history" style="margin-top:18px;background:#e74c3c;color:#fff;font-weight:bold;border:none;padding:9px 22px;border-radius:7px;box-shadow:0 2px 8px #e74c3c55;cursor:pointer;transition:background 0.3s,transform 0.2s;float:right;">🗑️ Xóa gia phả</button>
+    </div>
+</section>
+        <section id="about">
+            <h2>Giới thiệu</h2>
+            <p>
+               <strong>I. LỜI NÓI ĐẦU</strong><br>
+                Họ Hoàng (hoặc chi ất họ Nguyễn Hoàng) thôn Đạo Xá, nguồn gốc từ Họ Nguyễn thôn Sầm Khúc, xã Việt Hưng, huyện Văn Lâm, tỉnh Hưng Yên, hình thành từ lâu đời (Theo lưu truyền trên Gia phả bia khắc gỗ tại Nhà thờ tổ của họ  Nguyễn ghi chép năm 1869 thì Dòng họ Nguyễn – Thôn Sầm Khúc đến nay được trên 300 năm)<br>
+                <strong>Cụ tổ dòng họ đời thứ nhất:</strong><br>
+                - Thủy tổ khảo quý công tự Phúc Vinh<br>    
+                - Thủy tổ tỷ Nguyễn Thị Hiệu Diệu Hoan<br>
+                Sau 3 đời họ được chia thành 2 chi<br>
+                -Chi trưởng là chi Giáp<br>
+                -Chi thứ là chi Ất<br>
+                Dòng họ ngày càng phát triển, đến đời thứ 7 chia thành 6 phân chi.<br>
+                -Chi Giáp có 2 phân chi (1 và 2)<br>
+                -Chi Ất có 4 phân chi (3, 4, 5 và 6)<br>
+                Do điều kiện trong họ có Cụ Nho Bắc bị liên lụy với Triều đình nên một số cụ phải rời quê đi cư trú lập nghiệp nơi khác và thay đổi họ từ "Nguyễn Văn" đổi thành "Nguyễn Hoàng" hoặc “Hoàng Văn”.<br>
+                Trong đó có Cụ Phẩm thuộc Chi ất, phân chi 6 sang cư trú và lập nghiệp tại thôn Đạo Xá, xã Nghĩa Đạo, huyện Thuận Thành, tỉnh Bắc Ninh làm nghề dạy học.<br>
+                Cụ Nguyễn Hoàng Phẩm, là đời thứ 8 thuộc Chi ất phân chi út của dòng họ Nguyễn thôn Sầm Khúc; Là Cụ Tổ của Họ Hoàng (hoặc chi ất họ Nguyễn Hoàng) thôn Đạo Xá, dòng họ đã phát triển đến nay được trên 190 năm với 8 đời.<br>
+                Nối dõi tông đường tổ tiên con cháu luôn đoàn kết một lòng cùng dân làng xây dựng quê hương ngày càng giầu đẹp.<br>
+                Họ Hoàng (chi ất họ Nguyễn Hoàng) thôn Đạo Xá được đánh giá cao về học vấn cũng như nề nếp gia giáo, bình đẳng nghĩa tình, đó là những truyền thống tốt đẹp cho con cháu mai sau rèn đức, luyện tài và hướng về tâm phúc của tổ tiên.<br>
+                Tuy rằng ban biên soạn đã cố gắng sưu tầm tư liệu và thực hiện tổng hợp thực tiễn trên các lĩnh vực hiện có. Xong không sao tránh khỏi những thiếm khuyết, mong sự đóng góp bổ sung của mọi người để gia phả họ Hoàng (Chi ất họ Nguyễn Hoàng) thôn Đạo Xá được hoàn chỉnh hơn.<br>
+                Xin chân thành cám ơn .
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Liên hệ</h2>
+            <form class="contact-form">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Nội dung:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Gửi liên hệ</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Dòng Họ Hoàng (Nguyễn Hoàng). Mọi quyền được bảo lưu.
+    </footer>
+    <script>
+// Lưu dữ liệu vào Local Storage khi submit
+document.querySelector('.history-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = {
+        day: document.getElementById('day').value,
+        month: document.getElementById('month').value,
+        year: document.getElementById('year').value,
+        author: document.getElementById('author').value,
+        generation: document.getElementById('generation').value,
+        place: document.getElementById('place').value,
+        content: document.getElementById('history-content').value
+    };
+    localStorage.setItem('giapha', JSON.stringify(data));
+    alert('Đã lưu gia phả thành công!');
+    showHistory(data);
+});
+
+// Hiển thị lại dữ liệu đã lưu
+function showHistory(data) {
+    if(data.day || data.month || data.year)
+        document.getElementById('display-date').textContent = `${data.day || ''}/${data.month || ''}/${data.year || ''}`;
+    else
+        document.getElementById('display-date').textContent = '';
+    document.getElementById('display-author').textContent = data.author || '';
+    document.getElementById('display-generation').textContent = data.generation || '';
+    document.getElementById('display-place').textContent = data.place || '';
+    document.getElementById('display-content').textContent = data.content || '';
+    document.getElementById('history-display').style.display = 'block';
+}
+
+// Tự động điền lại dữ liệu nếu có
+window.addEventListener('DOMContentLoaded', function() {
+    const data = JSON.parse(localStorage.getItem('giapha') || '{}');
+    if(data.day) document.getElementById('day').value = data.day;
+    if(data.month) document.getElementById('month').value = data.month;
+    if(data.year) document.getElementById('year').value = data.year;
+    if(data.author) document.getElementById('author').value = data.author;
+    if(data.generation) document.getElementById('generation').value = data.generation;
+    if(data.place) document.getElementById('place').value = data.place;
+    if(data.content) document.getElementById('history-content').value = data.content;
+    if(Object.keys(data).length > 0) showHistory(data);
+});
+
+// Xóa dữ liệu gia phả
+document.getElementById('delete-history').addEventListener('click', function() {
+    if(confirm('Bạn có chắc chắn muốn xóa gia phả đã lưu?')) {
+        localStorage.removeItem('giapha');
+        document.getElementById('history-display').style.display = 'none';
+        alert('Đã xóa gia phả thành công!');
+    }
+});
+</script>
+</body>
+</html>
