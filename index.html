@@ -320,6 +320,7 @@ function showHistory(data) {
     document.getElementById('display-generation').textContent = data.generation || '';
     document.getElementById('display-place').textContent = data.place || '';
     document.getElementById('display-content').textContent = data.content || '';
+    document.querySelector('.history-form').style.display = 'none'; // Ẩn form nhập
     document.getElementById('history-display').style.display = 'block';
 }
 
